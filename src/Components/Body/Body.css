@@ -1,0 +1,8 @@
+.userImg{
+    width: 900px;
+    height: 600px;
+}
+.body-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
