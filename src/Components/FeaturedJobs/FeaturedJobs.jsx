@@ -24,7 +24,7 @@ const FeaturedJobs = () => {
 
     return (
         <div>
-            <h1>Featured Jobs</h1>
+            <h1 className='text-5xl font-bold mt-28 mb-3'>Featured Jobs</h1>
             <p><small>Explore thousands of job opportunities with all the information you need. Its your future</small></p>
             <div className=' grid grid-cols-2 gap-4 mt-3'>
                 {

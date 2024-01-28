@@ -15,8 +15,9 @@ const FeaturedJobsLists = ({ job }) => {
 
                 <span className='border rounded-md border-indigo-400 font-semibold text-indigo-400 px-2 py-1 mx-1'>{fulltimeOrPartTime}</span>
 
-                <p className='mt-3 font-semibold'><MapPinIcon className="h-4 w-4 inline-block" /><span>{location}</span>
-                    <span> <CurrencyDollarIcon className='h-4 w-4 inline-block'></CurrencyDollarIcon> Salary:{salary}</span>
+                <p className='mt-3 font-semibold flex items-center'><MapPinIcon className="h-4 w-4" /><span className='mr-2'>{location}</span>
+
+                    <span className='flex items-center mr-3'> <CurrencyDollarIcon className='h-4 w-4'></CurrencyDollarIcon> Salary:{salary}</span>
                 </p>
             </div>
 

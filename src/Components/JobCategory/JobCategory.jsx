@@ -18,7 +18,7 @@ const JobCategory = () => {
     const JobAndJobLogo = jobs.map((job, index) => ({ ...job, logo: JobLogo[index] }));
     return (
         <div>
-            <h1 className=' text-5xl font-bold mt-8'>Job Category List</h1>
+            <h1 className=' text-5xl font-bold mt-28'>Job Category List</h1>
             <p className='mt-4'><small>Explore thousands of job opportunities with all the information you need. Its your future</small></p>
             <div className=' grid grid-cols-4 gap-4 mt-3'>
 
