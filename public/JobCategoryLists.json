@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Account & Finance",
+      "availableJobs": 1200
+    },
+    {
+      "id": 2,
+      "name": "Creative Design",
+      "availableJobs": 800
+    },
+    {
+      "id": 3,
+      "name": "Marketing & Sales",
+      "availableJobs": 600
+    },
+    {
+      "id": 4,
+      "name": "Engineering Job",
+      "availableJobs": 500
+    }
+  ]
+  
