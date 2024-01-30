@@ -2,7 +2,7 @@ import React from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom';
 const FeaturedJobsLists = ({ job }) => {
-    const { logo, jobTitle, companyName, remoteOrOnsite, location, fulltimeOrPartTime, salary } = job;
+    const {id, logo, jobTitle, companyName, remoteOrOnsite, location, fulltimeOrPartTime, salary } = job;
     return (
         <div className=' border bg-indigo-200 p-5 text-left rounded-md flex flex-col h-full'>
             <div className='flex-grow'>
@@ -23,8 +23,9 @@ const FeaturedJobsLists = ({ job }) => {
             </div>
 
             <div className="mt-auto">
-                <Link to='/jobDetails'>
-                    <button className=' bg-indigo-500 rounded-md hover:bg-indigo-700 px-5 py-3 text-white'>Viewe Details</button>
+                <Link to={`/jobDetails/${id}`}>
+                    <button className=' bg-indigo-500 rounded-md hover:bg-indigo-700 px-5 py-3 text-white'>View Details
+                    </button>
                 </Link>
             </div>
         </div>

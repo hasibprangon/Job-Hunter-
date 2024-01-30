@@ -6,6 +6,7 @@ import logo4 from '../../assets/assets/logo/amazon-removebg-preview.png';
 import logo5 from '../../assets/assets/logo/samsung-removebg-preview.png';
 import logo6 from '../../assets/assets/logo/SpaceX.png';
 import FeaturedJobsLists from '../FeaturedJobsLists/FeaturedJobsLists';
+import JobDetails from '../JobDetails/JobDetails';
 
 const companeyLogo = [logo1, logo2, logo3, logo4, logo5, logo6];
 

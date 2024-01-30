@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": 0,
       "jobTitle": "Software Engineer",
       "companyName": "Google LLC",
       "remoteOrOnsite": "Remote",
@@ -17,7 +17,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 1,
       "jobTitle": "Data Scientist",
       "companyName": "Tesla",
       "remoteOrOnsite": "Onsite",
@@ -34,7 +34,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 2,
       "jobTitle": "UX/UI Designer",
       "companyName": "Netflix",
       "remoteOrOnsite": "Remote",
@@ -51,7 +51,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 3,
       "jobTitle": "Marketing Specialist",
       "companyName": "Amazon",
       "remoteOrOnsite": "Onsite",
@@ -68,7 +68,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 4,
       "jobTitle": "Financial Analyst",
       "companyName": "Samsung",
       "remoteOrOnsite": "Remote",
@@ -85,7 +85,7 @@
       }
     },
     {
-      "id": 6,
+      "id": 5,
       "jobTitle": "HR Specialist",
       "companyName": "Space-X",
       "remoteOrOnsite": "Onsite",

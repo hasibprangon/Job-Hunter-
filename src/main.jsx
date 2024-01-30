@@ -32,9 +32,15 @@ const router = createBrowserRouter([
         element: <Blog></Blog>
       },
       {
-        path:'/jobDetails',
+        path:'/jobDetails/:id',
+        loader: ({ params }) => fetch(`https://api.npoint.io/f8f6703b3811fcc89ad2/${params.id}`),
         element:<JobDetails></JobDetails>
       }
+      // {
+      //   path: '/jobDetails/:id',
+      //   element: <JobDetails></JobDetails>
+
+      // }
     ]
   },
 ]);
