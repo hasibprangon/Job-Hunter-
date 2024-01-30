@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
 const FeaturedJobsLists = ({ job }) => {
     const { logo, jobTitle, companyName, remoteOrOnsite, location, fulltimeOrPartTime, salary } = job;
     return (
@@ -22,7 +23,9 @@ const FeaturedJobsLists = ({ job }) => {
             </div>
 
             <div className="mt-auto">
-                <button className=' bg-indigo-500 rounded-md hover:bg-indigo-700 px-5 py-3 text-white'>Viewe Details</button>
+                <Link to='/jobDetails'>
+                    <button className=' bg-indigo-500 rounded-md hover:bg-indigo-700 px-5 py-3 text-white'>Viewe Details</button>
+                </Link>
             </div>
         </div>
     );

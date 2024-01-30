@@ -8,15 +8,16 @@ import Statistics from './Components/Statistics/Statistics.jsx'
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs.jsx'
 import Blog from './Components/Blog/Blog.jsx'
 import Home from './Components/Home/Home.jsx'
+import JobDetails from './Components/JobDetails/JobDetails.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<Default></Default>,
-    children:[
+    element: <Default></Default>,
+    children: [
       {
         path: '/',
-        element:<Home></Home>
+        element: <Home></Home>,
       },
       {
         path: 'statistics',
@@ -24,11 +25,15 @@ const router = createBrowserRouter([
       },
       {
         path: 'appliedJobs',
-        element:<AppliedJobs></AppliedJobs>
+        element: <AppliedJobs></AppliedJobs>
       },
       {
         path: 'blog',
         element: <Blog></Blog>
+      },
+      {
+        path:'/jobDetails',
+        element:<JobDetails></JobDetails>
       }
     ]
   },
