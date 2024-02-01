@@ -5,6 +5,10 @@ import bgImage2 from '../../assets/assets/images/bg2.png'
 
 const AppliedJobs = () => {
     const getDataFromLs = JSON.parse(localStorage.getItem("applied-Jobs")) || [];
+    let message;
+    if(getDataFromLs.length ===0){
+        message = <p>You have not applied any job yet</p>
+    }
     const backgroundStyle = {
         backgroundImage: `url(${bgImage1}), url(${bgImage2})`,
         backgroundRepeat: 'no-repeat',
@@ -23,6 +27,7 @@ const AppliedJobs = () => {
                 <h2 className='text-2xl font-semibold my-36'>Applied Jobs</h2>
             </div>
             <div className=' mt-16 mb-6'>
+                {message}
                 {
                     getDataFromLs.map(data => <AppliedDetails
                         key={data.id}
