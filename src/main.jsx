@@ -9,11 +9,13 @@ import AppliedJobs from './Components/AppliedJobs/AppliedJobs.jsx'
 import Blog from './Components/Blog/Blog.jsx'
 import Home from './Components/Home/Home.jsx'
 import JobDetails from './Components/JobDetails/JobDetails.jsx'
+import ErrorPage from './Components/ErrorPage/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Default></Default>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
