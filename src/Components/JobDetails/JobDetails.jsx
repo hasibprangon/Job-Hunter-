@@ -1,33 +1,56 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { CurrencyDollarIcon, BriefcaseIcon, EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid';
+import toast, { Toaster } from 'react-hot-toast';
+
+
 
 const JobDetails = () => {
 
     const info = useLoaderData();
-    const { id, jobDescription, jobResponsibility, educationalRequirements, experiences, salary, jobTitle, contactInformation } = info;
-    console.log(info);
+    const { id, jobDescription, jobResponsibility, educationalRequirements, experiences, salary, jobTitle, contactInformation, location } = info;
+    
+
+    const handleApplyNow = () => {
+       const appliedJobs = JSON.parse(localStorage.getItem("applied-Jobs")) || []
+       appliedJobs.push(id);
+       localStorage.setItem("applied-Jobs", JSON.stringify(appliedJobs));
+       toast.success('You successfully applied to the job')
+    }
+
+   
+    
     return (
         <div>
             <h2>Job Details:{id}</h2>
-            <div>
-                <div>
-                    <p><span>Job Description:</span>{jobDescription}</p>
-                    <p><span>Job Responsibility:</span>{jobResponsibility}</p>
-                    <p><span>Educational Requirements:</span>{educationalRequirements}</p>
-                    <p><span>Experiences:</span>{experiences}</p>
+            <div className='grid grid-cols-2 gap-48'>
+                <div className=' text-left'>
+                    <p className=' mb-6'><span className=' font-semibold'>Job Description:</span> <br />{jobDescription}</p>
+                    <p className=' mb-6'><span className=' font-semibold'>Job Responsibility:</span> <br />{jobResponsibility}</p>
+                    <p className=' mb-6'><span className=' font-semibold'>Educational Requirements:</span> <br />{educationalRequirements}</p>
+                    <p className=' mb-6'><span className=' font-semibold'>Experiences:</span> <br />{experiences}</p>
                 </div>
-                <div>
-                    <h3>Job Details</h3>
-                    <hr />
-                    <p>{salary}</p>
-                    <p>{jobTitle}</p>
-                    <hr />
-                    <p>{contactInformation.phone}</p>
-                    <p>{contactInformation.email}</p>
+                <div className=' bg-indigo-300 ml-36 text-left px-8 flex flex-col h-full'>
+                    <h3 className='font-semibold mb-4 mt-4'>Job Details</h3>
+                    <hr className='mb-4' />
+                    <p className='flex items-center mr-3 mb-3'><CurrencyDollarIcon className='h-4 w-4'></CurrencyDollarIcon><span className='font-semibold'>Salary:</span> {salary}</p>
+                    <p className='flex items-center mr-3 mb-4'><BriefcaseIcon className='h-4 w-4'></BriefcaseIcon> <span className='font-semibold'>Job-Title:</span>{jobTitle}</p>
+                    <hr className='mb-4' />
+                    <p className='flex items-center mr-3 mb-3'><PhoneIcon className='h-4 w-4'></PhoneIcon><span className='font-semibold'>Phone:</span>{contactInformation.phone}</p>
+                    <p className='flex items-center mr-3 mb-3'><EnvelopeIcon className='h-4 w-4'></EnvelopeIcon> <span className='font-semibold'>Email:</span>{contactInformation.email}</p>
+                    <p className='flex items-center mr-3 mb-6'><MapPinIcon className='h-4 w-4'></MapPinIcon> <span className='font-semibold'>Address:</span>{location}</p>
+                    <div className="mt-auto mx-auto" >
+                        <button onClick={() =>handleApplyNow()} className=' bg-indigo-500 rounded-md hover:bg-indigo-700 px-5 py-3 text-white mb-6'>Apply Now</button>
+                        <Toaster></Toaster>
+                    </div>
                 </div>
-                <button>Apply Now</button>
             </div>
+
+
+
         </div>
+
+        
     );
 };
 
