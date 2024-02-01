@@ -22,12 +22,14 @@ const AppliedJobs = () => {
             <div style={backgroundStyle}>
                 <h2 className='text-2xl font-semibold my-36'>Applied Jobs</h2>
             </div>
-            {
-                getDataFromLs.map(data => <AppliedDetails
-                    key={data.id}
-                    data={data}
-                ></AppliedDetails>)
-            }
+            <div className=' mt-16 mb-6'>
+                {
+                    getDataFromLs.map(data => <AppliedDetails
+                        key={data.id}
+                        data={data}
+                    ></AppliedDetails>)
+                }
+            </div>
         </div>
     );
 };

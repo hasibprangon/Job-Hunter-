@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const AppliedDetails = ({ data }) => {
     const { id, companyLogo, jobTitle, companyName, remoteOrOnsite, location, fulltimeOrPartTime, salary } = data;
     return (
-        <div className=' border p-5 text-left rounded-md grid grid-cols-3'>
-            <div className='flex'>
+        <div className=' border p-5 text-left rounded-md grid grid-cols-2 mb-10  bg-indigo-200'>
+            <div className='flex mx-auto'>
                 <img className=' w-36' src={companyLogo} alt="" />
 
                 <div className='ml-10'>
@@ -25,7 +25,7 @@ const AppliedDetails = ({ data }) => {
                 </div>
             </div>
 
-            <div className='mx-auto my-auto'>
+            <div className=' mx-auto my-auto'>
                 <Link to={`/jobDetails/${id}`}>
                     <button className=' bg-indigo-500 rounded-md hover:bg-indigo-700 px-5 py-3 text-white'>View Details
                     </button>
