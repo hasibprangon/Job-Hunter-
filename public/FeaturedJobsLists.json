@@ -2,6 +2,7 @@
     {
       "id": 0,
       "jobTitle": "Software Engineer",
+      "companyLogo": "https://i.ibb.co/9qQLc0s/google.png",
       "companyName": "Google LLC",
       "remoteOrOnsite": "Remote",
       "location": "Anywhere",
@@ -19,6 +20,7 @@
     {
       "id": 1,
       "jobTitle": "Data Scientist",
+      "companyLogo": "https://i.ibb.co/tzH06cK/tesla.png",
       "companyName": "Tesla",
       "remoteOrOnsite": "Onsite",
       "location": "Cityville",
@@ -36,6 +38,7 @@
     {
       "id": 2,
       "jobTitle": "UX/UI Designer",
+      "companyLogo": "https://i.ibb.co/dWN1HkK/netflix.png",
       "companyName": "Netflix",
       "remoteOrOnsite": "Remote",
       "location": "Global",
@@ -53,6 +56,7 @@
     {
       "id": 3,
       "jobTitle": "Marketing Specialist",
+      "companyLogo": "https://i.ibb.co/GtzBTgd/amazon.png",
       "companyName": "Amazon",
       "remoteOrOnsite": "Onsite",
       "location": "Metropolis",
@@ -70,6 +74,7 @@
     {
       "id": 4,
       "jobTitle": "Financial Analyst",
+      "companyLogo": "https://i.ibb.co/2Fkm0MG/Samsung-Logo.png",
       "companyName": "Samsung",
       "remoteOrOnsite": "Remote",
       "location": "Worldwide",
@@ -87,6 +92,7 @@
     {
       "id": 5,
       "jobTitle": "HR Specialist",
+      "companyLogo": "https://ibb.co/BjdqRXc",
       "companyName": "Space-X",
       "remoteOrOnsite": "Onsite",
       "location": "City Center",

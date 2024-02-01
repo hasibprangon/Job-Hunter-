@@ -13,7 +13,7 @@ const JobDetails = () => {
 
     const handleApplyNow = () => {
        const appliedJobs = JSON.parse(localStorage.getItem("applied-Jobs")) || []
-       appliedJobs.push(id);
+       appliedJobs.push(info);
        localStorage.setItem("applied-Jobs", JSON.stringify(appliedJobs));
        toast.success('You successfully applied to the job')
     }
