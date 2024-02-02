@@ -1,6 +1,6 @@
 import React from 'react';
-import bgImage1 from '../../assets/assets/images/bg1.png'
-import bgImage2 from '../../assets/assets/images/bg2.png'
+import bgImage1 from '../../assets/assets/images/bg1.png';
+import bgImage2 from '../../assets/assets/images/bg2.png';
 import {
   ComposedChart,
   Area,

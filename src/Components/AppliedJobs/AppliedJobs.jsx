@@ -1,14 +1,14 @@
 import React from 'react';
 import AppliedDetails from './AppliedDetails';
-import bgImage1 from '../../assets/assets/images/bg1.png'
-import bgImage2 from '../../assets/assets/images/bg2.png'
+import bgImage1 from '../../assets/assets/images/bg1.png';
+import bgImage2 from '../../assets/assets/images/bg2.png';
 
 const AppliedJobs = () => {
     const getDataFromLs = JSON.parse(localStorage.getItem("applied-Jobs")) || [];
     let message;
     if(getDataFromLs.length ===0){
         message = <p>You have not applied any job yet</p>
-    }
+    };
     const backgroundStyle = {
         backgroundImage: `url(${bgImage1}), url(${bgImage2})`,
         backgroundRepeat: 'no-repeat',

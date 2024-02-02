@@ -17,17 +17,13 @@ const JobCategory = () => {
 
     const JobAndJobLogo = jobs.map((job, index) => ({ ...job, logo: JobLogo[index] }));
     return (
-        <div>
-            <h1 className=' text-5xl font-bold mt-28'>Job Category List</h1>
-            <p className='mt-4'><small>Explore thousands of job opportunities with all the information you need. Its your future</small></p>
-            <div className=' grid grid-cols-4 gap-4 mt-3'>
-
-                {
-                    JobAndJobLogo.map(job => <JobList
-                        key={job.id}
-                        job={job}
-                    ></JobList>)
-                }
+        <div className='container mx-auto'>
+            <h1 className='text-3xl md:text-5xl font-bold mt-10 md:mt-28 mb-4'>Job Category List</h1>
+            <p className='md:mt-4'><small>Explore thousands of job opportunities with all the information you need. It's your future.</small></p>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-3'>
+                {JobAndJobLogo.map(job => (
+                    <JobList key={job.id} job={job}></JobList>
+                ))}
             </div>
         </div>
     );
